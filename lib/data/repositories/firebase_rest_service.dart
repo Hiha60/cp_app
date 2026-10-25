@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:convert';
 import 'dart:math';
 import 'package:http/http.dart' as http;
+import '../../core/secrets.dart';
 
 // ─────────────────────────────────────────────────────────────────────────────
 //  Firebase REST Service
@@ -61,9 +62,9 @@ class FirebaseRestService {
   FirebaseRestService._();
   static final instance = FirebaseRestService._();
 
-  // ⚠️ من Firebase Console → Project Settings
-  static const _apiKey = 'AIzaSyCFCpKt4ZhHAOhLusWZsfHhg8zzRAHORlA';
-  static const _projectId = 'clinical-pharma';
+  // القيم دي جاية من lib/core/secrets.dart (مش بيترفع على GitHub)
+  static const _apiKey = Secrets.firebaseApiKey;
+  static const _projectId = Secrets.firebaseProjectId;
 
   static const _dbName = 'projects/$_projectId/databases/(default)/documents';
   static const _firestoreBase = 'https://firestore.googleapis.com/v1/$_dbName';
