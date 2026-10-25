@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "326836684689",
+    "project_id": "clinical-pharma",
+    "storage_bucket": "clinical-pharma.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:326836684689:android:23edeebd81391822c3bc30",
+        "android_client_info": {
+          "package_name": "com.clinicalpharmacy.cp_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBigMI6HcaxTFdxw3YF0mdwgvgONIcrx5k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

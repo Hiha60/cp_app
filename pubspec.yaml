@@ -1,0 +1,67 @@
+name: cp_app
+description: Clinical Pharmacy App
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+  flutter: '>=3.16.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # ⚠️ مطلوبة عشان showDatePicker وأي حاجة بتحتاج MaterialLocalizations
+  flutter_localizations:
+    sdk: flutter
+
+  get: ^4.6.6
+
+  sqflite: ^2.3.2
+  sqflite_common_ffi: ^2.3.2+1
+
+  path_provider: ^2.1.2
+  path: ^1.9.0
+
+  crypto: ^3.0.3
+  http: ^1.2.0
+
+  # تصدير الإكسل: بنملا قالب xlsx جاهز (بدل مكتبة excel)
+  archive: ^4.5.2
+  file_picker: ^13.1.0    # اختيار مكان الحفظ
+  share_plus: ^13.3.1     # مشاركة الملف
+
+  flutter_svg: ^2.0.10+1
+  gap: ^3.0.1
+
+  url_launcher: ^6.2.4
+  package_info_plus: ^10.2.1
+
+  connectivity_plus: ^7.3.2
+  shared_preferences: ^2.2.2
+
+  # تخزين آمن لـ refresh token (Keystore / Keychain / Windows)
+  flutter_secure_storage: ^11.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  fonts:
+    - family: Cairo
+      fonts:
+        - asset: assets/fonts/Cairo-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Cairo-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Cairo-Bold.ttf
+          weight: 700
+
+  assets:
+    - assets/databases/
+    - assets/fonts/
+    - assets/images/
+    - assets/templates/
